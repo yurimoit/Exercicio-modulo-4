@@ -1,17 +1,17 @@
-public class TipoLivro extends Livro{
+public class MiniLivro extends Livro{
 
     private String nome;
 
     private double valor;
 
-    private String tipo;
+    private String genero;
 
     @Override
-    public void formatoLivro(String tipo) {
-        this.tipo=tipo;
+    public void generoLivro(String genero) {
+        this.genero=genero;
     }
 
-    public TipoLivro(String nome, double valor) {
+    public MiniLivro(String nome, double valor) {
         this.nome = nome;
         this.valor=valor;
     }
@@ -24,10 +24,10 @@ public class TipoLivro extends Livro{
 
     @Override
     public String toString() {
-        return "TipoLivro{" +
+        return "Mini livro {" +
                 "nome='" + nome + '\'' +
                 ", valor=" + valor +
-                ", tipo='" + tipo + '\'' +
+                ", Gênero livro='" + genero + '\'' +
                 '}';
     }
 
@@ -47,11 +47,12 @@ public class TipoLivro extends Livro{
         this.valor = valor;
     }
 
-    public String getTipo() {
-        return tipo;
+
+    public String getGenero() {
+        return genero;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setGenero(String genero) {
+        this.genero = genero;
     }
 }

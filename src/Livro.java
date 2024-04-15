@@ -1,4 +1,4 @@
 abstract class Livro implements Produto {
-    public abstract void formatoLivro(String tipo);
+    public abstract void generoLivro(String genero);
 
 }

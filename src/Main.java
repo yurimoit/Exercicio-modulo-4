@@ -8,11 +8,25 @@ public class Main {
         System.out.println(revista1);
 
 
-        TipoLivro livro1=new TipoLivro("Matemática",50.0);
-        livro1.formatoLivro("fisico");
+        LivroFisico livro1=new LivroFisico("Matemática",50.0);
+        livro1.generoLivro("Acadêmico");
         livro1.desconto();
 
         System.out.println(livro1);
+
+        MiniLivro livro2=new MiniLivro("Harry Potter e a Câmara Secreta",40.0);
+        livro2.generoLivro("Fantasia e aventura");
+        livro2.desconto();
+
+        System.out.println(livro2);
+
+        Ebook livro3=new Ebook("Alien",70.0);
+        livro3.generoLivro("Ficção científica");
+        livro3.desconto();
+
+        System.out.println(livro3);
+
+
 
     }
 }
